@@ -152,6 +152,7 @@ export default {
   },
   methods: {
     getViplist () {
+      this.queryUserById()
       this.common.httpGet('/vip/getAllMenberByShopId?shopId=' + this.common.getShopId())
         .then(res => {
           if (res.data.meta.code === 0) {
@@ -160,6 +161,20 @@ export default {
             this.vipList = []
           }
           this.selectChange(this.dataForm.menberId)
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    },
+    // 查询推荐人信息
+    queryUserById () {
+      this.common.httpGet('/vip/getUserDetail?accountId=' + this.dataForm.recommenderMobile)
+        .then(res => {
+          if (res.data.meta.code === 0) {
+            this.dataForm.recommenderMobile = res.data.data.mobile
+          } else {
+            this.dataForm.recommenderMobile = ''
+          }
         })
         .catch(err => {
           console.log(err)

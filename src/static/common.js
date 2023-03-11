@@ -1,12 +1,12 @@
 import axios from 'axios'
 
 let serverUrl = '/manageWeb'
-// let serverUrl = 'http://47.104.145.165:8082/manageWeb'
+// let serverUrl = 'https://mohovip.top/manageWeb'
 // let serverUrl = 'http://127.0.0.1:8082/manageWeb'
 let SSID = 'SESSIONID'
 let SHOPID = 'SHOPID'
 let UNAME = 'X-Tocm-Uname'
-// sessionStorage.setItem('SESSIONID', 'f610ebcf0958acd69daf5c2e69bf62dd')
+// sessionStorage.setItem('SESSIONID', 'bfc0f41402ec12c8bde6330a12192491')
 // sessionStorage.setItem('SHOPID', '1')
 
 const
