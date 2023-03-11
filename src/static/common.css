@@ -1,0 +1,30 @@
+/* 分页 */
+  .footer_nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-between;
+  }
+  .other-style {
+    color: #999;
+    font-size: 14px;
+    margin-left: 1%;
+  }
+  .pagination-style {
+    margin-right: 1%;
+  }
+/* 搜索 */
+  .search-box{
+    float: left;
+    margin: 0 0 20px 15px;
+  }
+  .search-ipt{
+    width: 170px !important;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+/* 弹窗 */
+  .dialog-btn{
+    text-align: right;
+    margin-top:15px;
+  }
