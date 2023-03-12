@@ -9,10 +9,7 @@
       <el-button type="success" @click="addEvent" >增加会员</el-button>
       <!-- <el-button type="success" @click="noCardEvent" >无卡消费</el-button> -->
     </div>
-  <el-table
-    :data="tableData"
-    border
-    style="width: 100%">
+  <el-table :data="tableData"  style="width: 100%">
     <el-table-column header-align="center"  fixed="left"  prop="mobile" label="手机号" width="120"></el-table-column>
     <el-table-column header-align="center"  fixed="left"  prop="vipCard" label="会员卡号" width="180"></el-table-column>
     <el-table-column header-align="center" prop="name" label="会员名" width="120"></el-table-column>
@@ -22,10 +19,10 @@
         </span>
       </template>
     </el-table-column>
-    <el-table-column header-align="center" prop="menberLevel" label="会员等级"></el-table-column>
+    <!-- <el-table-column header-align="center" prop="menberLevel" label="会员等级"></el-table-column> -->
     <el-table-column header-align="center" prop="menberName" label="等级名称"></el-table-column>
-    <el-table-columnheader-align="center" prop="menberPoints" label="充值积分"></el-table-column>
-    <el-table-column header-align="center" prop="rewardPoints" label="推荐积分"></el-table-column>
+    <el-table-column header-align="center" prop="menberPoints" label="充值积分"></el-table-column>
+    <!-- <el-table-column header-align="center" prop="rewardPoints" label="推荐积分"></el-table-column> -->
     <el-table-column header-align="center" prop="discount" label="享受折扣" width="80"></el-table-column>
     <el-table-column header-align="center" prop="operatorName" label="操作人" width="80"></el-table-column>
     <el-table-column header-align="center" prop="updateTime" label="操作时间" width="180">

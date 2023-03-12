@@ -172,8 +172,6 @@ export default {
         .then(res => {
           if (res.data.meta.code === 0) {
             this.dataForm.recommenderMobile = res.data.data.mobile
-          } else {
-            this.dataForm.recommenderMobile = ''
           }
         })
         .catch(err => {
